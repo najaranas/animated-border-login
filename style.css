@@ -1,189 +1,174 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:ital,wght@1,600&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@500&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family:  'Roboto', sans-serif;
-    
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:ital,wght@1,600&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-body{
-    background-color: #23242B;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: #23242b;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.wrapper{
-    background-color: #232123;
-    width: 400px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-   
-   
+.wrapper {
+  background-color: #232123;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
 }
-.wrapper::before{
-    content: "";
-    background: linear-gradient(0deg,transparent,transparent,blue,blue,blue);
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    left: -50%;
-    top: -50%;
-    animation: square 6s linear infinite;
-    transform-origin: bottom right ;
-
+.wrapper::before {
+  content: "";
+  background: linear-gradient(0deg, transparent, transparent, blue, blue, blue);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: -50%;
+  top: -50%;
+  animation: square 6s linear infinite;
+  transform-origin: bottom right;
 }
-.wrapper::after{
-    content: "";
-    background: linear-gradient(0deg,transparent,transparent,red,red,red);
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    left: -50%;
-    top: -50%;
-    animation: square 6s linear infinite;
-    transform-origin: bottom right ;
-    animation-delay: -4.5s;
-
+.wrapper::after {
+  content: "";
+  background: linear-gradient(0deg, transparent, transparent, red, red, red);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: -50%;
+  top: -50%;
+  animation: square 6s linear infinite;
+  transform-origin: bottom right;
+  animation-delay: -4.5s;
 }
-.wrapper .color2{
-    width: 400px;
-    height: 400px;
-    position: relative;
-
+.wrapper .color2 {
+  width: 400px;
+  height: 400px;
+  position: relative;
 }
-.wrapper .color2::before{
-     content: "";
-    background: linear-gradient(0deg,transparent,transparent,blue,blue,blue);
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    left: -50%;
-    top: -50%;
-    animation: square 6s linear infinite;
-    transform-origin: bottom right ;
-    animation-delay: -3s;
+.wrapper .color2::before {
+  content: "";
+  background: linear-gradient(0deg, transparent, transparent, blue, blue, blue);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: -50%;
+  top: -50%;
+  animation: square 6s linear infinite;
+  transform-origin: bottom right;
+  animation-delay: -3s;
 }
-.wrapper .color2::after{
-    content: "";
-   background: linear-gradient(0deg,transparent,transparent,red,red,red);
-   position: absolute;
-   width: 400px;
-   height: 400px;
-   left: -50%;
-   top: -50%;
-   animation: square 6s linear infinite;
-   transform-origin: bottom right ;
-   animation-delay: -1.5s;
+.wrapper .color2::after {
+  content: "";
+  background: linear-gradient(0deg, transparent, transparent, red, red, red);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: -50%;
+  top: -50%;
+  animation: square 6s linear infinite;
+  transform-origin: bottom right;
+  animation-delay: -1.5s;
 }
-@keyframes square{
-    0%{
-        rotate: 0;
-    }
-    100%{
-        rotate: 360deg;
-    }
+@keyframes square {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
-    form{
-        inset: 4px;
-        z-index: 12;
-        background-color: #232123;
-        position: absolute;
-    }
-.title{
-    margin: 30px 20px 10px 20px;
-    padding: 3px;
-
+form {
+  inset: 4px;
+  z-index: 12;
+  background-color: #232123;
+  position: absolute;
 }
-.wrapper .title h1{
-    text-align: center;
-    font-weight: 600;
-    color: white;
-    font-size: 40px;
-    letter-spacing: 3px;
+.title {
+  margin: 30px 20px 10px 20px;
+  padding: 3px;
 }
-.wrapper .inputbox{
-    position: relative;
-    width: 300px;
-    margin: 40px ;
-    padding: 5px;
-   
+.wrapper .title h1 {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 3px;
 }
-.wrapper .inputbox input{
-    width: 100%;
-    height: 30px;
-    outline: none;
-    background-color: transparent;
-    border: none;
-    color: #232123;
-    position: relative;
-    
+.wrapper .inputbox {
+  position: relative;
+  width: 300px;
+  margin: 40px;
+  padding: 5px;
 }
-.wrapper .inputbox span{
-    position: absolute;
-    left: 0;
-    transform: translateX(15px);
-    letter-spacing: 2px;
-    pointer-events: none;
-    color: gray;
-    transition: 0.5s;
-    
+.wrapper .inputbox input {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: #232123;
+  position: relative;
+}
+.wrapper .inputbox span {
+  position: absolute;
+  left: 0;
+  transform: translateX(15px);
+  letter-spacing: 2px;
+  pointer-events: none;
+  color: gray;
+  transition: 0.5s;
 }
 
 .wrapper .inputbox input:valid ~ span,
-.wrapper .inputbox input:focus ~ span{
-    font-size: 10px;
-    transform: translateY(-25px) translateX(10px);
+.wrapper .inputbox input:focus ~ span {
+  font-size: 10px;
+  transform: translateY(-25px) translateX(10px);
 }
-.wrapper .inputbox i{
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: aliceblue;
-   position:absolute;
-   left: 0;
-   bottom: 0;
-   transform: translateY(-3px);
-   transition: 0.5s;
-   
+.wrapper .inputbox i {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: aliceblue;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(-3px);
+  transition: 0.5s;
 }
 .wrapper .inputbox input:valid ~ i,
-.wrapper .inputbox input:focus ~ i{
-    height: 35px;
-    pointer-events: none;
-    z-index: -23;
+.wrapper .inputbox input:focus ~ i {
+  height: 35px;
+  pointer-events: none;
+  z-index: -23;
 }
-.wrapper .forget-signup{
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-30px);
-    padding: 0px 40px;
-
+.wrapper .forget-signup {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-30px);
+  padding: 0px 40px;
 }
-.wrapper .forget-signup a{
-    text-decoration: none;
-    color: gray;
-    letter-spacing: 1px;
-    font-size: 12px;
+.wrapper .forget-signup a {
+  text-decoration: none;
+  color: gray;
+  letter-spacing: 1px;
+  font-size: 12px;
 }
-.wrapper .forget-signup a.Signup{
-    font-weight: 800;
-    color: white;
-    font-size: 15px;
+.wrapper .forget-signup a.Signup {
+  font-weight: 800;
+  color: white;
+  font-size: 15px;
 }
-.wrapper form .login{
-    width: 80px;
-    margin-left: 40px;
+.wrapper form .login {
+  width: 80px;
+  margin-left: 40px;
 }
-.wrapper form .login button{
-    padding: 5px;
-    width: 100%;
-    height: 40px;
-    font-weight: 800;
-    color: black;
-    font-family: font-family:  'Roboto', sans-serif;
+.wrapper form .login button {
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  font-weight: 800;
+  color: black;
+  font-family: "Roboto", sans-serif;
 }
-
-
