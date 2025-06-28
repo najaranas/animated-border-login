@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🔥 Animated Border Login Form
 
 A stylish login form with rotating animated borders using only HTML and CSS. Features smooth color transitions and a modern UI look with no JavaScript involved.
@@ -37,4 +36,3 @@ A stylish login form with rotating animated borders using only HTML and CSS. Fea
 - CSS3
 
 ## 🚀 Made with ❤️ by Najar Anas
->>>>>>> 7829ebcc3b3ceb30d4912a1dcf666e90c49affae
